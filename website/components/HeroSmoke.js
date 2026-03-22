@@ -8,7 +8,7 @@ export default function HeroSmoke(){
   }}>
 
   <div style={{
- position:"absolute",
+ position:"absolute", 
  width:"100%",
  height:"100%",
  background:"rgba(0,0,0,0.4)"
@@ -32,3 +32,4 @@ export default function HeroSmoke(){
   </div>
  )
 }
+ 
