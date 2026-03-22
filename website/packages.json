@@ -1,0 +1,11 @@
+{
+  "name": "starrynights-frontend",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  }
+}
