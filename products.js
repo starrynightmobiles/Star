@@ -1,15 +1,14 @@
+const router = require("express").Router()
+const Product = require("../models/Product")
 
-const router=require("express").Router()
-const Product=require("../models/Product")
-
-router.get("/",async(req,res)=>{
+router.get("/", async (req,res)=>{
  res.json(await Product.find())
 })
 
-router.post("/",async(req,res)=>{
- const p=new Product(req.body)
- await p.save()
- res.json(p)
+router.post("/", async (req,res)=>{
+ const product = new Product(req.body)
+ await product.save()
+ res.json(product)
 })
 
-module.exports=router
+module.exports = router
