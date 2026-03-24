@@ -1,7 +1,15 @@
-const router = require("express").Router()
+const express = require("express")
+const router = express.Router()
 
-router.post("/", (req,res)=>{
- res.json({message:"Order placed"})
+let orders = []
+
+router.post("/", (req, res) => {
+  orders.push(req.body)
+  res.json({ message: "Order placed" })
+})
+
+router.get("/", (req, res) => {
+  res.json(orders)
 })
 
 module.exports = router
